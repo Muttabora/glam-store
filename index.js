@@ -51,7 +51,7 @@ const Product = mongoose.model('Product', productSchema);
 
 // --- Express app
 const app = express();
-app.use(cors());              // allow requests from browser (or restrict in prod)
+app.use(cors({endearing-boba-568eca.netlify.app}));              // allow requests from browser (or restrict in prod)
 app.use(express.json());      // parse JSON bodies
 app.use(express.urlencoded({ extended: true }));
 
@@ -173,3 +173,4 @@ app.listen(PORT, () => {
   console.log(`?? Server running on http://localhost:${PORT}`);
 
 });
+
